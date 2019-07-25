@@ -8,8 +8,8 @@ var targetY = Math.random() * boxHeight;
 console.log(`targetx: ${targetX}\ntargety: ${targetY}`);
 
 function distance(targetx, targety, mousex, mousey){
-  var a = targetx - targety;
-  var b = mousex - mousey;
+  var a = targetx - mousex;
+  var b = targety - mousey;
   return Math.floor(Math.sqrt(a*a + b*b));
 
 };
