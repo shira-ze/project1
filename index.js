@@ -18,7 +18,7 @@ function loc(event){
   console.log(`mousex: ${event.clientX}\nmousey: ${event.clientY}`);
   var dist = distance(targetX, targetY, event.clientX, event.clientY);
   console.log(dist);
-  box.style.backgroundColor = `rgb(${255-dist},0,0)`;
+  box.style.backgroundColor = `rgb(${255 - dist},0,0)`;
 };
 
 box.addEventListener("mousemove",loc);
